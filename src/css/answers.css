@@ -1,0 +1,9 @@
+.answers-container {
+    height: 70%;
+}
+.next-button-container {
+    height: 25%;
+}
+.answer {
+    font-family: 'Quicksand', sans-serif;
+}

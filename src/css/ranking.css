@@ -1,0 +1,42 @@
+.ranking-container {
+    height: 100%;
+    width: 30%;
+    overflow-y: scroll;
+}
+.ranking-header {
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ranking-title {
+    font-size: large;
+    font-family: 'Quicksand', sans-serif;
+}
+.header-icon {
+    width: 50px;
+    height: 50px;
+}
+::-webkit-scrollbar
+{
+	width: 7px;
+    border: solid 1px gray;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: gray;	
+    border-radius: 10px;
+}
+.table {
+    height:100%
+}
+th, td {
+    font-family: 'Quicksand', sans-serif;
+}
+.medal {
+    width: 25px;
+    height: 25px;
+}

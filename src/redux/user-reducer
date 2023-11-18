@@ -1,0 +1,27 @@
+const initialState = null;
+  
+  const userReducer = (state = initialState, action) => {
+    switch (action.type) {
+      case 'SAVE_USER_NAME':
+        return action.payload
+      case 'REMOVE_USER_NAME':
+        return null
+      default:
+        return state;
+    }
+  };
+  
+  export const saveUserName = (amount) => {
+    return {
+      type: 'SAVE_USER_NAME',
+      payload: amount,
+    };
+  };
+  
+  export const removeUserName = () => {
+    return {
+      type: 'REMOVE_USER_NAME',
+    };
+  };
+  
+  export default userReducer;

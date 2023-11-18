@@ -1,0 +1,15 @@
+.score-container {
+    width: 80%;
+    height: 15%;
+    display: flex;
+}
+.tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%
+}
+.icon {
+    width: 35px;
+    height: 35px;
+}
