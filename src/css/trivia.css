@@ -17,3 +17,10 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+    .trivia-container {
+        width: 100%;
+        min-height: 80vh
+    }
+  }

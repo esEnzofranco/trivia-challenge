@@ -29,7 +29,6 @@ const Questions = () => {
 
     useEffect(() => {
         setCategory(questions[currentQuestion]?.category)
-        console.log(category)
     }, [currentQuestion])
 
     const getQuestions = () => {
@@ -37,7 +36,6 @@ const Questions = () => {
             .then(res => res.json())
             .then((data) => {
                 setQuestions(data)
-                console.log(data)
             })
     }
 

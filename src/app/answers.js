@@ -54,8 +54,8 @@ const Answers = ({ currentQuestion, questions }) => {
       <form onSubmit={handleSubmit} className="w-100">
         <div className="answers-content">
           {shuffledAnswers.map((answer, index) => (
-            <div key={index} className="border rounded shadow-sm mb-1">
-              <label htmlFor={`answer-${index}`} className="answer-label w-100 d-flex">
+            <div key={index} className=" border rounded shadow-sm mb-1">
+              <label htmlFor={`answer-${index}`} className="option answer-label w-100 d-flex">
                 <div className="border p-1">
                   <input
                     type="radio"

@@ -40,3 +40,9 @@ th, td {
     width: 25px;
     height: 25px;
 }
+
+@media screen and (max-width: 600px) {
+    .ranking-container {
+        width: 100%
+    }
+  }
