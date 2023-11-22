@@ -1,7 +1,13 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb://127.0.0.1/TriviaChallengeDB';
+// URI de conexión que incluye nombre de usuario, contraseña y otros detalles
+const URI = 'mongodb://mongo:aDaCEAB-AAhcbAGhAFAh-5GD4ba61Haa@viaduct.proxy.rlwy.net:57389';
 
-mongoose.connect(URI)
-.then(db => console.log('Successful database conection'))
-.catch(err => console.log('Failed database conection'))
+
+mongoose.connect(URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  // Puedes agregar otras opciones de configuración si es necesario
+})
+.then(() => console.log('Conexión exitosa a la base de datos'))
+.catch(err => console.error('Error de conexión a la base de datos:', err));
